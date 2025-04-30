@@ -3,7 +3,6 @@ import java.util.Scanner;
 public class DescuentoCompra {
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
-
         System.out.println("Ingrese el valor de la compra:");
         double valorCompra = teclado.nextDouble();
 
