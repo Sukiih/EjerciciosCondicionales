@@ -15,7 +15,19 @@ public class Triangulo {
             System.out.println("Los lados pueden formar un triangulo");
         } else {
             System.out.println("Los lados no pueden formar un triángulo");
+            if (primerLado + segundoLado <= tercerLado) {
+                System.out.println("La suma del primer lado (" + primerLado + ") y del segundo lado (" + segundoLado +
+                        ") es menor o igual al tercer lado (" + tercerLado + ").");
+            }
+            if (segundoLado + tercerLado <= primerLado) {
+                System.out.println("La suma del segundo lado (" + segundoLado + ") y del tercer lado (" + tercerLado +
+                        ") es menor o igual al primer lado (" + primerLado + ").");
+            }
+            if (primerLado + tercerLado <= segundoLado) {
+                System.out.println("La suma del primer lado (" + primerLado + ") y del tercer lado (" + tercerLado +
+                        ") es menor o igual al segundo lado (" + segundoLado + ").");
+            }
         }
-
+        teclado.close();
     }
 }
